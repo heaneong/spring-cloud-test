@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: cloud-init
+#  cloud:
+#    config:
+#      uri: ${SPRING_CONFIG_URI:http://localhost:8888}
+#      # 远程属性覆盖授权
+#      allow-override: true
+
+  cloud:
+    config:
+      enabled: false

@@ -1,0 +1,23 @@
+
+server:
+  port: 10003
+
+
+spring:
+  application:
+    name: eureka-openfeign
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:10001/eureka
+
+  instance:
+    instance-id: spring-cloud-provider-openfeign
+#    prefer-ip-address: true
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
