@@ -16,6 +16,10 @@ ext {
     set('springCloudVersion', "2021.0.5")
 }
 
+jar {
+    enabled = false
+}
+
 dependencies {
     implementation 'org.springframework.cloud:spring-cloud-starter'
     implementation 'org.springframework.cloud:spring-cloud-starter-config'
