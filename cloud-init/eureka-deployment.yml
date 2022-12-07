@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: cloud-init
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: cloud-init
+  template:
+    metadata:
+      labels:
+        app: cloud-init
+    spec:
+      containers:
+        - name: cloud-init
+          image: cloudinit:1.0
