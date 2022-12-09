@@ -10,7 +10,7 @@ spring:
 eureka:
   client:
     service-url:
-      defaultZone: http://localhost:443/eureka
+      defaultZone: http://localhost:10001/eureka
 
   instance:
     instance-id: spring-cloud-provider-openfeign
